@@ -1,0 +1,19 @@
+{
+  "name": "advanced-scientific-geometric-calculator-backend",
+  "version": "1.0.0",
+  "description": "Backend server for the Advanced Scientific and Geometric Shapes Calculator with Graph Plotting web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mathjs": "^12.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

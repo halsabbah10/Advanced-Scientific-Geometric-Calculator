@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Advanced Scientific and Geometric Shapes Calculator with Graph Plotting
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+This project aims to develop a comprehensive web application that combines the functionality of a scientific calculator with the ability to calculate properties of both simple and complex geometric shapes (2D and 3D), alongside graph plotting capabilities. The application will provide an interactive and educational tool for users by visualizing geometric shapes based on the calculations performed. The frontend will be built using React for a dynamic user interface, while Express.js will be used on the backend for efficient request handling and calculation processing.
 
-## Available Scripts
+## Core Features
+- **Scientific Calculator Module:** Implement standard scientific calculator functionalities including trigonometric functions, logarithms, powers, roots, and factorial calculations. Support complex number calculations.
+- **Geometric Shapes Calculator:**
+  - Calculate area, perimeter, volume, and surface area for various 2D and 3D shapes.
+  - Support complex geometric operations such as determining centroid, inradius, circumradius, and Euler's characteristic.
+- **Graph Plotting Functionality:**
+  - Plot mathematical functions in a Cartesian coordinate system.
+  - Support plotting multiple functions simultaneously with different colors.
+  - Include zoom in/out and pan functionalities for detailed graph exploration.
+- **Shape Visualization:**
+  - Provide visual representation of geometric shapes.
+  - Allow real-time modification of dimensions with dynamic property and visual updates.
+- **Interactive and Responsive UI:**
+  - Develop a responsive and intuitive user interface using React.
+  - Implement easy-to-navigate layout for different calculator functionalities.
+- **Backend Calculation Engine:**
+  - Utilize Express.js for efficient server-side calculation processing.
+  - Secure API endpoints for handling calculation requests.
 
-In the project directory, you can run:
+## Technical Requirements
+- **Frontend:** React with hooks and context for state management.
+- **Backend:** Express.js on Node.js.
+- **Data Visualization:** D3.js or Three.js for graph plotting and shape visualization.
+- **Styling:** CSS Grid, Flexbox, SASS, or Styled Components.
+- **Deployment:** Consider platforms like Heroku or Netlify for public access.
 
-### `npm start`
+## Project Structure
+```
+- frontend/
+  - src/
+    - index.js
+    - App.js
+    - components/
+      - Calculator.js
+      - GeometricShapesCalculator.js
+      - GraphPlotting.js
+      - ShapeVisualization.js
+    - utils/
+      - api.js
+- backend/
+  - server.js
+  - controllers/
+    - calculatorController.js
+    - shapesCalculatorController.js
+    - graphPlottingController.js
+    - shapeVisualizationController.js
+  - utils/
+    - calculations.js
+  - routes/
+    - calculatorRoutes.js
+    - shapesCalculatorRoutes.js
+    - graphPlottingRoutes.js
+    - shapeVisualizationRoutes.js
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Stretch Goals
+- Implement a history feature to track and revisit previous calculations.
+- Add user authentication for saving and retrieving personal calculation histories.
+- Integrate educational content explaining mathematical principles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
+1. Clone the repository.
+2. Install dependencies for frontend and backend using `npm install`.
+3. Start the frontend and backend servers using `npm start`.
 
-### `npm test`
+## Contributors
+- [Husam AlSabbah](https://github.com/halsabbah10)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

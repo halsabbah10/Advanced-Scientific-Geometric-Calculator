@@ -1,0 +1,11 @@
+# Frontend build output
+/build
+
+# Node modules
+/node_modules
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
